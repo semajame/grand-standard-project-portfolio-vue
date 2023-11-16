@@ -205,6 +205,8 @@ button {
 
 .rooms__section {
   padding: 12rem 2rem 15rem 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .rooms__header {
@@ -282,10 +284,6 @@ button {
   background-color: $semi-white;
 }
 
-.dine__header {
-  padding: 10rem 0 5rem 0;
-}
-
 .dine__left {
   span {
     text-transform: uppercase;
@@ -305,6 +303,95 @@ button {
 }
 
 .dine__suites__container {
-  margin: 0;
-  padding: 0 2rem;
+  padding: 10rem 2rem 5rem 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+// FOOTER
+
+footer {
+  background-color: $yellow;
+  padding: 7rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-family: Lato, sans-serif;
+    font-size: 1.1rem;
+    max-width: 550px;
+    margin: 2rem;
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+}
+
+.footer__logo {
+  margin: 0 auto;
+  text-align: center;
+
+  img {
+    width: 300px;
+  }
+}
+
+.footer__contact {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $white;
+  font-size: 0.725rem;
+  letter-spacing: 0.2rem;
+  color: $yellow;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-family: Lato, sans-serif;
+  width: 200px;
+
+  &:hover {
+    background-color: $green;
+    color: $white;
+  }
+}
+
+.footer__nav {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin: 4rem 0;
+
+  nav ul li {
+    display: flex;
+    margin: 5rem 5rem;
+
+    .footer__router {
+      text-decoration: none;
+      color: $white;
+      font-size: 2.5rem;
+      padding: 0 2rem;
+      letter-spacing: -0.1rem;
+    }
+  }
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  span {
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+
+  a {
+    list-style: none;
+    text-decoration: none;
+    padding: 0 1rem;
+    font-family: Lato, sans-serif;
+    color: $semi-white;
+  }
 }

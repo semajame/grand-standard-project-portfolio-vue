@@ -52,7 +52,6 @@
           </div>
           <h3>{{ items.header }}</h3>
           <p>{{ items.paragraph }}</p>
-          <span> {{ items.view }} </span>
         </div>
       </div>
     </div>
@@ -66,30 +65,30 @@
         />
       </div>
 
-      <div class="dine__header">
-        <div class="dine__left">
-          <span> {{ dineSpan }} </span>
-          <h2>{{ dineHeader }}</h2>
-        </div>
-        <div class="dine__right">
-          <router-link :to="{ name: 'dine' }" class="router__link room__link">
-            {{ dineButton }}
-          </router-link>
-        </div>
-      </div>
-
-      <div class="rooms__suites__container dine__suites__container">
-        <div
-          class="rooms__suites"
-          v-for="(items, index) in dineMenu"
-          :key="index"
-        >
-          <div class="rooms__img">
-            <img :src="items.img" alt="Room Image" />
+      <div class="dine__suites__container">
+        <div class="dine__header">
+          <div class="dine__left">
+            <span> {{ dineSpan }} </span>
+            <h2>{{ dineHeader }}</h2>
           </div>
-          <h3>{{ items.header }}</h3>
-          <p>{{ items.paragraph }}</p>
-          <span> {{ items.view }} </span>
+          <div class="dine__right">
+            <router-link :to="{ name: 'dine' }" class="router__link room__link">
+              {{ dineButton }}
+            </router-link>
+          </div>
+        </div>
+        <div class="rooms__suites__container">
+          <div
+            class="rooms__suites"
+            v-for="(items, index) in dineMenu"
+            :key="index"
+          >
+            <div class="rooms__img">
+              <img :src="items.img" alt="Room Image" />
+            </div>
+            <h3>{{ items.header }}</h3>
+            <p>{{ items.paragraph }}</p>
+          </div>
         </div>
       </div>
     </div>
