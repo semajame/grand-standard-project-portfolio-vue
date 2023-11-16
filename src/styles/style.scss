@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@500&family=Playfair+Display&display=swap");
+
+$green: #235a52;
+$white: #fff;
+$semi-white: #eaedf2;
+$yellow: #96772c;
+$black: #000;
+$gray: #636363;
+
+body {
+  background-color: $white;
+  min-height: 100vh;
+  width: 100%;
+}
+
+// HEADER
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  padding: 1.5rem 2rem;
+  display: flex;
+  border-bottom: 1px solid rgb(201, 200, 200);
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+nav {
+  ul {
+    display: flex;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .router__link {
+    font-size: 0.725rem;
+    color: $white;
+    letter-spacing: 0.1rem;
+    padding: 0 1rem;
+  }
+}
+
+.router__link {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+span,
+button {
+  font-family: "Lato", sans-serif !important;
+}
+
+// HERO
+
+.home__hero {
+  background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e3f543f85059f6bf67849f5_palm-trees-at-night-258154-p-1600.jpeg")
+    no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.home__overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#000),
+    color-stop(0%, rgba(0, 0, 0, 0.2)),
+    to(rgba(0, 0, 0, 0.75))
+  );
+}
+
+.hero__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 10rem;
+  position: relative;
+  z-index: 2;
+
+  span {
+    text-transform: uppercase;
+    color: $white;
+    font-size: 0.725rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    width: 720px;
+    font-weight: 400;
+    letter-spacing: -0.1vw;
+  }
+
+  .get__to__know {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: $yellow;
+    font-size: 0.725rem;
+    letter-spacing: 0.2rem;
+    color: $white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $green;
+      transition: 0.3s ease;
+    }
+  }
+}
+
+// ABOUT
+
+.about__section {
+  padding: 7rem 0 0 0;
+  background-color: $semi-white;
+}
+
+.about__content {
+  text-align: center;
+
+  span {
+    text-transform: uppercase;
+    color: $green;
+    font-size: 0.725rem;
+    letter-spacing: 0.2rem;
+  }
+
+  h2 {
+    font-weight: 400;
+    line-height: 4rem;
+    margin: 4rem auto;
+    letter-spacing: -0.1vw;
+    width: 950px;
+    font-size: 3rem;
+  }
+
+  .learn__more {
+    color: $yellow;
+    border: none;
+    border-bottom: 1px solid $yellow;
+    cursor: pointer;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 0.725rem;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem 0;
+
+    &:hover {
+      color: $green;
+      border-bottom: 1px solid $green;
+      transition: 0.3s ease;
+    }
+  }
+}
+
+.about__image {
+  margin: 8rem 0 0 0;
+  height: 600px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Playfair Display', serif;
+
+// ROOMS
+
+.rooms__section {
+  padding: 12rem 2rem 8rem 2rem;
+}
+
+.rooms__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.room__left {
+  span {
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.4em;
+    width: 655px;
+  }
+}
+
+.room__link {
+  background-color: $black;
+  padding: 1.5rem 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: $white !important;
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2rem);
+    transition: 0.3s ease;
+  }
+}
+
+.rooms__suites__container {
+  margin: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.rooms__suites {
+  text-align: center;
+
+  h3 {
+    color: $yellow;
+    margin: 1rem 0;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  p {
+    margin: 1rem 0;
+    font-family: "Lato", sans-serif;
+    color: $gray;
+  }
+
+  span {
+    color: $green;
+  }
+}
