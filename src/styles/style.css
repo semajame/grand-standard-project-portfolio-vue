@@ -149,11 +149,14 @@ button {
   transition: 0.3s ease;
 }
 
-.about__image {
+.about__image,
+.dine__img {
   margin: 8rem 0 0 0;
+  width: 100%;
   height: 600px;
 }
-.about__image img {
+.about__image img,
+.dine__img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -161,7 +164,7 @@ button {
 }
 
 .rooms__section {
-  padding: 12rem 2rem 8rem 2rem;
+  padding: 12rem 2rem 15rem 2rem;
 }
 
 .rooms__header {
@@ -189,12 +192,11 @@ button {
   transition: 0.3s ease;
 }
 .room__link:hover {
-  transform: translateY(-2rem);
-  transition: 0.3s ease;
+  background-color: #235a52;
 }
 
 .rooms__suites__container {
-  margin: 5rem 0;
+  margin: 10rem 0 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,4 +219,37 @@ button {
 }
 .rooms__suites span {
   color: #235a52;
+}
+
+.dine__img {
+  margin: 0;
+}
+
+.dine__content {
+  text-align: center;
+  background-color: #eaedf2;
+}
+
+.dine__header {
+  padding: 10rem 0 5rem 0;
+}
+
+.dine__left span {
+  text-transform: uppercase;
+}
+.dine__left h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.4em;
+  margin: 0 auto;
+  width: 655px;
+}
+
+.dine__right {
+  margin: 5rem 0;
+}
+
+.dine__suites__container {
+  margin: 0;
+  padding: 0 2rem;
 }/*# sourceMappingURL=style.css.map */

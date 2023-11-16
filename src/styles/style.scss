@@ -184,9 +184,12 @@ button {
   }
 }
 
-.about__image {
+.about__image,
+.dine__img {
   margin: 8rem 0 0 0;
+  width: 100%;
   height: 600px;
+
   img {
     width: 100%;
     height: 100%;
@@ -201,7 +204,7 @@ button {
 // ROOMS
 
 .rooms__section {
-  padding: 12rem 2rem 8rem 2rem;
+  padding: 12rem 2rem 15rem 2rem;
 }
 
 .rooms__header {
@@ -232,13 +235,12 @@ button {
   transition: 0.3s ease;
 
   &:hover {
-    transform: translateY(-2rem);
-    transition: 0.3s ease;
+    background-color: $green;
   }
 }
 
 .rooms__suites__container {
-  margin: 5rem 0;
+  margin: 10rem 0 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -264,4 +266,45 @@ button {
   span {
     color: $green;
   }
+}
+
+// DINE
+
+.dine__section {
+}
+
+.dine__img {
+  margin: 0;
+}
+
+.dine__content {
+  text-align: center;
+  background-color: $semi-white;
+}
+
+.dine__header {
+  padding: 10rem 0 5rem 0;
+}
+
+.dine__left {
+  span {
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.4em;
+    margin: 0 auto;
+    width: 655px;
+  }
+}
+
+.dine__right {
+  margin: 5rem 0;
+}
+
+.dine__suites__container {
+  margin: 0;
+  padding: 0 2rem;
 }
