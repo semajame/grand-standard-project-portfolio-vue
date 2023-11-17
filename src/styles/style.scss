@@ -76,6 +76,12 @@ button {
   height: 100vh;
 }
 
+.stay__hero {
+  @extend .home__hero;
+  background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e3f5b6eeb1a906fe628d863_bed-bedroom-blanket-clean-545012-p-1600.jpeg")
+    no-repeat center !important;
+}
+
 .home__overlay {
   position: absolute;
   z-index: 1;
