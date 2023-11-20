@@ -314,6 +314,9 @@ footer p {
   padding: 0 2rem;
   letter-spacing: -0.1rem;
 }
+.footer__nav nav ul li .footer__router:hover {
+  color: #235a52;
+}
 
 .footer__socials {
   display: flex;
@@ -332,6 +335,9 @@ footer p {
   font-family: Lato, sans-serif;
   color: #eaedf2;
 }
+.footer__socials a a:hover {
+  color: #235a52;
+}
 
 .stay__hero {
   background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e3f5b6eeb1a906fe628d863_bed-bedroom-blanket-clean-545012-p-1600.jpeg") no-repeat center !important;
@@ -346,6 +352,10 @@ footer p {
   background-color: transparent;
   margin-top: 5rem;
   border: none;
+  transition: 200ms ease;
+}
+.explore__hotel:hover {
+  color: #000;
 }
 
 .stay__about__section {
@@ -364,6 +374,10 @@ footer p {
   display: flex;
   align-items: start;
   gap: 3rem;
+}
+
+.stay__suites__content:nth-child(2) {
+  flex-direction: row-reverse;
 }
 
 .left__suites img {

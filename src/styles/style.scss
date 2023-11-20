@@ -369,6 +369,10 @@ footer {
       font-size: 2.5rem;
       padding: 0 2rem;
       letter-spacing: -0.1rem;
+
+      &:hover {
+        color: $green;
+      }
     }
   }
 }
@@ -390,6 +394,10 @@ footer {
     padding: 0 1rem;
     font-family: Lato, sans-serif;
     color: $semi-white;
+
+    a:hover {
+      color: $green;
+    }
   }
 }
 
@@ -413,6 +421,11 @@ footer {
   background-color: transparent;
   margin-top: 5rem;
   border: none;
+  transition: 200ms ease;
+
+  &:hover {
+    color: $black;
+  }
 }
 
 .stay__about__section {
@@ -434,6 +447,10 @@ footer {
   display: flex;
   align-items: start;
   gap: 3rem;
+}
+
+.stay__suites__content:nth-child(2) {
+  flex-direction: row-reverse;
 }
 
 .left__suites {

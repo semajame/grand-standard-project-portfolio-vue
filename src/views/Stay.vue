@@ -49,7 +49,7 @@
               src="https://assets-global.website-files.com/644be2808c71a50680612eed/64a4458e3134eb3674e3d537_icon-guests-suite-x-webflow-template.svg"
               alt=""
             />
-            <span> 2 Guests </span>
+            <span> {{ items.roomGuests }} </span>
           </div>
 
           <div class="vertical__line"></div>
@@ -58,7 +58,7 @@
               src="https://assets-global.website-files.com/644be2808c71a50680612eed/64a4458edb01effb895fbd0f_icon-beds-suite-x-webflow-template.svg"
               alt=""
             />
-            <span> 2 Guests </span>
+            <span> {{ items.roomBed }} </span>
           </div>
         </div>
 
@@ -90,6 +90,8 @@ export default {
             " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe pariatur ipsa autem dignissimos sapiente. Ipsa sapiente aspernatur asperiores in",
           roomUsd: "$120.00 USD",
           moreInfo: "More Information",
+          roomGuests: "2 Guest",
+          roomBed: "1 Queen Bed",
         },
         {
           roomImg:
@@ -99,6 +101,8 @@ export default {
             " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe pariatur ipsa autem dignissimos sapiente. Ipsa sapiente aspernatur asperiores in",
           roomUsd: "$200.00 USD",
           moreInfo: "More Information",
+          roomGuests: "4 Guest",
+          roomBed: "2 Queen Bed",
         },
         {
           roomImg:
@@ -108,6 +112,8 @@ export default {
             " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe pariatur ipsa autem dignissimos sapiente. Ipsa sapiente aspernatur asperiores in",
           roomUsd: "$400.00 USD",
           moreInfo: "More Information",
+          roomGuests: "2 Guest",
+          roomBed: "1 King Bed",
         },
       ],
     };
