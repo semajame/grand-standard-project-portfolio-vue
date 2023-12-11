@@ -22,6 +22,35 @@
       <button class="learn__more">{{ aboutButton }}</button>
     </div>
   </section>
+
+  <h2 class="menuHeader">Explore Our Menu</h2>
+
+  <div class="stay__suites__container dine__suites__container">
+    <div
+      class="stay__suites__content"
+      v-for="(items, index) in dineMenus"
+      :key="index"
+    >
+      <div class="left__suites">
+        <img :src="items.img" alt="Suite Room Image" />
+      </div>
+      <div class="right__suites">
+        <div class="right__top">
+          <h3>{{ items.header }}</h3>
+          <p>
+            {{ items.paragraph }}
+          </p>
+        </div>
+        <div class="right__bottom">
+          <span> {{ items.roomBed }} </span>
+        </div>
+
+        <router-link :to="{ name: 'dine' }" class="more__information">{{
+          items.moreInfo
+        }}</router-link>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -33,6 +62,34 @@ export default {
       dineButton: "Browse our Menu",
       aboutHeader: '"A flavour tour around the world, in a single night."',
       aboutSpan: "Recent Guest",
+
+      dineMenus: [
+        {
+          img: "https://uploads-ssl.webflow.com/5e13ddf1eb497c2211969f6c/5e3f659a85059f2be878cb4a_group-of-people-doing-cheers-544961-thumb-p-800.jpeg",
+          header: "Drink Menu",
+          paragraph:
+            " With a panoramic view overlooking our grounds and direct access to the south facing porch, the Master Suite provides warmth and brightness for a peaceful getaway.",
+          view: "View Details",
+          moreInfo: "More Information",
+        },
+        {
+          img: "https://uploads-ssl.webflow.com/5e13ddf1eb497c2211969f6c/5e3f654f84ad29260cf8e430_close-up-of-meal-served-in-plate-306059-p-800.jpeg",
+
+          header: "Dinner Menu",
+          paragraph:
+            " With a panoramic view overlooking our grounds and direct access to the south facing porch, the Master Suite provides warmth and brightness for a peaceful getaway.",
+          view: "View Details",
+          moreInfo: "More Information",
+        },
+        {
+          img: " https://uploads-ssl.webflow.com/5e13ddf1eb497c2211969f6c/5e3f651453cb2bb83ea03fd5_food-dinner-lunch-unhealthy-70497-thumb-p-500.jpeg",
+          header: "Lunch Menu",
+          paragraph:
+            " With a panoramic view overlooking our grounds and direct access to the south facing porch, the Master Suite provides warmth and brightness for a peaceful getaway.",
+          view: "View Details",
+          moreInfo: "More Information",
+        },
+      ],
     };
   },
 
@@ -49,4 +106,13 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.menuHeader {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.room__suites__container {
+  padding: 12rem 2rem 15rem 2rem;
+}
+</style>

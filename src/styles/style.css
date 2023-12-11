@@ -448,4 +448,8 @@ footer p {
 .dine__hero {
   background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e3f566985059f02d1785d5d_chef-preparing-vegetable-dish-on-tree-slab-1267320-p-1600.jpeg") no-repeat center !important;
   background-size: cover !important;
+}
+
+.dine__content {
+  padding: 0 2rem 15rem 2rem;
 }/*# sourceMappingURL=style.css.map */
