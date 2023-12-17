@@ -25,6 +25,7 @@ export default {
   data() {
     return {
       logo: "https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e3c0df17383a87005e25170_Logo%20(Light).svg",
+
       headerStyle: {
         backgroundColor: "rgba(255, 255, 255, 0)",
       },

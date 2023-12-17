@@ -68,7 +68,7 @@ export default {
           img: "https://uploads-ssl.webflow.com/5e13ddf1eb497c2211969f6c/5e3f659a85059f2be878cb4a_group-of-people-doing-cheers-544961-thumb-p-800.jpeg",
           header: "Drink Menu",
           paragraph:
-            " With a panoramic view overlooking our grounds and direct access to the south facing porch, the Master Suite provides warmth and brightness for a peaceful getaway.",
+            " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
           view: "View Details",
           moreInfo: "More Information",
         },
@@ -77,7 +77,7 @@ export default {
 
           header: "Dinner Menu",
           paragraph:
-            " With a panoramic view overlooking our grounds and direct access to the south facing porch, the Master Suite provides warmth and brightness for a peaceful getaway.",
+            " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
           view: "View Details",
           moreInfo: "More Information",
         },
@@ -85,7 +85,7 @@ export default {
           img: " https://uploads-ssl.webflow.com/5e13ddf1eb497c2211969f6c/5e3f651453cb2bb83ea03fd5_food-dinner-lunch-unhealthy-70497-thumb-p-500.jpeg",
           header: "Lunch Menu",
           paragraph:
-            " With a panoramic view overlooking our grounds and direct access to the south facing porch, the Master Suite provides warmth and brightness for a peaceful getaway.",
+            " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
           view: "View Details",
           moreInfo: "More Information",
         },
