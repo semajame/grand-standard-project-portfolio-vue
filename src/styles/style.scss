@@ -68,6 +68,10 @@ button {
   font-family: "Lato", sans-serif !important;
 }
 
+button {
+  cursor: pointer;
+}
+
 // HERO
 
 .home__hero {
@@ -279,6 +283,7 @@ button {
 .dine__content {
   text-align: center;
   background-color: $semi-white;
+  padding: 0 0 15rem 0;
 }
 
 .dine__left {
@@ -539,9 +544,97 @@ footer {
   background-size: cover !important;
 }
 
-.dine__content {
-  padding: 0 2rem 15rem 2rem;
+.contacts__hero {
+  @extend .home__hero;
+  background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e397f7601fbdb500b2db72f_GettyImages-508069545-p-1600.jpeg")
+    no-repeat center;
+  background-size: cover;
 }
 
-.dine__suites__container {
+// CONTACT FORM
+
+form {
+  background-color: transparent;
+}
+
+input {
+  border: none;
+  background-color: $semi-white;
+  padding: 1rem;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  outline: none;
+}
+
+label {
+  color: $black;
+  font-size: 0.96rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  font-family: "Lato", sans-serif;
+}
+
+.name__container {
+  display: flex;
+  gap: 1rem;
+}
+
+.first__name__container,
+.last__name__container,
+.email__container,
+.phone__container,
+.message__container {
+  margin: 0.2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  height: 200px;
+  border: none;
+  background-color: $semi-white;
+  padding: 1rem;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  outline: none;
+}
+
+.send__message {
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  background-color: #3c5ccf;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.contacts__container {
+  display: flex;
+  background-color: $white;
+  justify-content: space-around;
+  padding: 7rem 4rem;
+}
+
+.contacts__span {
+  color: #3c5ccf;
+  font-size: 1.2rem;
+}
+
+.contacts__header {
+  margin: 1.5rem 0 3rem 0;
+  max-width: 500px;
+  line-height: 60px;
+  color: $black;
+  font-weight: 500;
+  font-size: 3.8rem;
+}
+
+.contacts__unork:hover::before {
+  width: 170px;
 }
