@@ -2,7 +2,13 @@
   <div class="home__overlay"></div>
   <main class="contacts__hero">
     <div class="hero__content">
+      <span>
+        {{ contactsSpan }}
+      </span>
       <h1>{{ contactHeader }}</h1>
+      <span class="contact__fill">
+        {{ contactFill }}
+      </span>
     </div>
   </main>
 
@@ -52,9 +58,10 @@
 export default {
   data() {
     return {
-      contactHeader: "Contact Us",
       contactButton: "Browse our Contact",
       contactsSpan: "Contact Us",
+      contactHeader: "Questions and concerns?",
+      contactFill: "Fill up the form below!",
       contactsHeaderTwo: "Get in touch with our friendly team.",
 
       firstName: "First Name",

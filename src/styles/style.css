@@ -93,7 +93,7 @@ button {
 }
 .hero__content h1 {
   font-size: 4.5rem;
-  width: 720px;
+  max-width: 720px;
   font-weight: 400;
   letter-spacing: -0.1vw;
 }
@@ -296,7 +296,7 @@ footer p {
   border: none;
   cursor: pointer;
   font-family: Lato, sans-serif;
-  width: 200px;
+  max-width: 200px;
 }
 .footer__contact:hover {
   background-color: #235a52;
@@ -430,7 +430,7 @@ footer p {
 }
 .right__bottom .vertical__line {
   height: 40px;
-  width: 2px;
+  max-width: 2px;
   background-color: #636363;
 }
 .right__bottom .description {
@@ -475,7 +475,7 @@ input {
 }
 
 label {
-  color: #000;
+  color: #235a52;
   font-size: 0.96rem;
   font-weight: 600;
   margin: 0.5rem 0;
@@ -503,7 +503,8 @@ label {
   background-color: #eaedf2;
   padding: 1rem;
   border-radius: 5px;
-  color: #fff;
+  color: #000;
+  font-family: "Lato", sans-serif;
   font-weight: 600;
   outline: none;
 }
@@ -519,6 +520,10 @@ label {
   background-color: #3c5ccf;
   width: 100%;
   padding: 1rem 0;
+}
+
+.contact__fill {
+  margin-top: 4rem;
 }
 
 .contacts__container {
@@ -543,5 +548,5 @@ label {
 }
 
 .contacts__unork:hover::before {
-  width: 170px;
+  max-width: 170px;
 }/*# sourceMappingURL=style.css.map */
