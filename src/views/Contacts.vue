@@ -6,13 +6,13 @@
         {{ contactsSpan }}
       </span>
       <h1>{{ contactHeader }}</h1>
-      <span class="contact__fill">
+      <button class="explore__hotel" @click="toggleKnow">
         {{ contactFill }}
-      </span>
+      </button>
     </div>
   </main>
 
-  <section class="contacts__container">
+  <section class="contacts__container" id="about__section">
     <div class="contacts__left">
       <span class="contacts__span"> {{ contactsSpan }} </span>
       <h2 class="contacts__header">{{ contactsHeaderTwo }}</h2>
@@ -55,6 +55,8 @@
 </template>
 
 <script>
+import { toggleKnow } from "../scrollUtils";
+
 export default {
   data() {
     return {
@@ -71,6 +73,10 @@ export default {
       message: "Message",
       sendMessage: "Send message",
     };
+  },
+
+  methods: {
+    toggleKnow,
   },
 };
 </script>

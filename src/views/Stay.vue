@@ -71,6 +71,7 @@
 </template>
 
 <script>
+import { toggleKnow } from "../scrollUtils";
 export default {
   data() {
     return {
@@ -120,14 +121,7 @@ export default {
   },
 
   methods: {
-    toggleKnow() {
-      const section = document.getElementById("about__section");
-
-      window.scrollTo({
-        top: section.offsetTop,
-        behavior: "smooth",
-      });
-    },
+    toggleKnow,
   },
 };
 </script>

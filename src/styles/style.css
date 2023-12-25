@@ -5,60 +5,7 @@ body {
   width: 100%;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 999;
-  padding: 1.5rem 2rem;
-  display: flex;
-  border-bottom: 1px solid rgb(201, 200, 200);
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
-
-nav ul {
-  display: flex;
-}
-nav li {
-  list-style: none;
-}
-nav .router__link {
-  font-size: 0.725rem;
-  color: #fff;
-  letter-spacing: 0.1rem;
-  padding: 0 1rem;
-}
-
-.router__link {
-  font-family: "Oswald", sans-serif;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-}
-
-h1 {
-  color: white;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Playfair Display", serif;
-}
-
-span,
-button {
-  font-family: "Lato", sans-serif !important;
-}
-
-button {
-  cursor: pointer;
-}
-
-.home__hero, .contacts__hero, .dine__hero, .stay__hero {
+.home__hero {
   background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e3f543f85059f6bf67849f5_palm-trees-at-night-258154-p-1600.jpeg") no-repeat center;
   background-size: cover;
   height: 100vh;
@@ -115,59 +62,6 @@ button {
   transition: 0.3s ease;
 }
 
-.about__section, .stay__about__section {
-  padding: 7rem 0 0 0;
-  background-color: #eaedf2;
-}
-
-.about__content {
-  text-align: center;
-}
-.about__content span {
-  text-transform: uppercase;
-  color: #235a52;
-  font-size: 0.725rem;
-  letter-spacing: 0.2rem;
-}
-.about__content h2 {
-  font-weight: 400;
-  line-height: 4rem;
-  margin: 4rem auto;
-  letter-spacing: -0.1vw;
-  width: 950px;
-  font-size: 3rem;
-}
-.about__content .learn__more {
-  color: #96772c;
-  border: none;
-  border-bottom: 1px solid #96772c;
-  cursor: pointer;
-  background-color: transparent;
-  text-transform: uppercase;
-  font-size: 0.725rem;
-  letter-spacing: 0.2rem;
-  padding: 0.5rem 0;
-}
-.about__content .learn__more:hover {
-  color: #235a52;
-  border-bottom: 1px solid #235a52;
-  transition: 0.3s ease;
-}
-
-.about__image,
-.dine__img {
-  margin: 8rem 0 0 0;
-  width: 100%;
-  height: 600px;
-}
-.about__image img,
-.dine__img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .rooms__section {
   padding: 12rem 2rem 15rem 2rem;
   max-width: 1440px;
@@ -190,7 +84,7 @@ button {
   width: 655px;
 }
 
-.room__link, .more__information {
+.room__link {
   background-color: #000;
   padding: 1.5rem 2rem;
   font-weight: 600;
@@ -198,7 +92,7 @@ button {
   color: #fff !important;
   transition: 0.3s ease;
 }
-.room__link:hover, .more__information:hover {
+.room__link:hover {
   background-color: #235a52;
 }
 
@@ -257,6 +151,59 @@ button {
   padding: 10rem 2rem 5rem 2rem;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.about__section {
+  padding: 7rem 0 0 0;
+  background-color: #eaedf2;
+}
+
+.about__content {
+  text-align: center;
+}
+.about__content span {
+  text-transform: uppercase;
+  color: #235a52;
+  font-size: 0.725rem;
+  letter-spacing: 0.2rem;
+}
+.about__content h2 {
+  font-weight: 400;
+  line-height: 4rem;
+  margin: 4rem auto;
+  letter-spacing: -0.1vw;
+  width: 950px;
+  font-size: 3rem;
+}
+.about__content .learn__more {
+  color: #96772c;
+  border: none;
+  border-bottom: 1px solid #96772c;
+  cursor: pointer;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 0.725rem;
+  letter-spacing: 0.2rem;
+  padding: 0.5rem 0;
+}
+.about__content .learn__more:hover {
+  color: #235a52;
+  border-bottom: 1px solid #235a52;
+  transition: 0.3s ease;
+}
+
+.about__image,
+.dine__img {
+  margin: 8rem 0 0 0;
+  width: 100%;
+  height: 600px;
+}
+.about__image img,
+.dine__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
@@ -344,209 +291,8 @@ footer p {
   color: #235a52;
 }
 
-.stay__hero {
-  background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e3f5b6eeb1a906fe628d863_bed-bedroom-blanket-clean-545012-p-1600.jpeg") no-repeat center !important;
-  background-size: cover !important;
-}
-
-.explore__hotel {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 0.725rem;
-  letter-spacing: 0.2rem;
-  background-color: transparent;
-  margin-top: 5rem;
-  border: none;
-  transition: 200ms ease;
-}
-.explore__hotel:hover {
-  color: #000;
-}
-
-.stay__about__section {
-  background-color: #fff;
-  padding-bottom: 10rem;
-}
-
-.stay__suites__container {
-  padding: 7rem 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 10rem;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.stay__suites__content {
-  display: flex;
-  align-items: start;
-  gap: 3rem;
-}
-
-.stay__suites__content:nth-child(2) {
-  flex-direction: row-reverse;
-}
-
-.left__suites img {
-  width: 800px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 500px;
-}
-
-.right__suites {
-  width: 50%;
-}
-
-.right__top {
-  border-bottom: 1px solid #eaedf2;
-  margin-bottom: 2rem;
-}
-.right__top h3 {
-  font-size: 3.5rem;
-}
-.right__top p {
-  margin: 2rem 0;
-  font-size: 1.1rem;
-  font-family: "Lato", sans-serif;
-}
-.right__top .price__container {
-  margin: 0 0 2rem 0;
-}
-.right__top .price__container .price {
-  font-family: "Playfair Display", serif !important;
-  font-size: 2rem;
-}
-.right__top .price__container .night {
-  font-family: "Oswald", sans-serif;
-}
-
-.right__bottom {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-.right__bottom .vertical__line {
-  height: 40px;
-  max-width: 2px;
-  background-color: #636363;
-}
-.right__bottom .description {
-  font-size: 0.925rem;
-  color: #636363;
-}
-.right__bottom .description img {
-  width: 35px;
-  height: 35px;
-}
-
-.more__information {
-  position: relative;
-  top: 1.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
-}
-
 .dine__hero {
   background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e3f566985059f02d1785d5d_chef-preparing-vegetable-dish-on-tree-slab-1267320-p-1600.jpeg") no-repeat center !important;
   background-size: cover !important;
-}
-
-.contacts__hero {
-  background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e397f7601fbdb500b2db72f_GettyImages-508069545-p-1600.jpeg") no-repeat center;
-  background-size: cover;
-}
-
-form {
-  background-color: transparent;
-}
-
-input {
-  border: none;
-  background-color: #eaedf2;
-  padding: 1rem;
-  border-radius: 5px;
-  color: #fff;
-  font-weight: 600;
-  outline: none;
-}
-
-label {
-  color: #235a52;
-  font-size: 0.96rem;
-  font-weight: 600;
-  margin: 0.5rem 0;
-  font-family: "Lato", sans-serif;
-}
-
-.name__container {
-  display: flex;
-  gap: 1rem;
-}
-
-.first__name__container,
-.last__name__container,
-.email__container,
-.phone__container,
-.message__container {
-  margin: 0.2rem 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.message {
-  height: 200px;
-  border: none;
-  background-color: #eaedf2;
-  padding: 1rem;
-  border-radius: 5px;
-  color: #000;
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  outline: none;
-}
-
-.send__message {
-  cursor: pointer;
-  margin-top: 0.5rem;
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: #fff;
-  border-radius: 5px;
-  border: none;
-  background-color: #3c5ccf;
-  width: 100%;
-  padding: 1rem 0;
-}
-
-.contact__fill {
-  margin-top: 4rem;
-}
-
-.contacts__container {
-  display: flex;
-  background-color: #fff;
-  justify-content: space-around;
-  padding: 7rem 4rem;
-}
-
-.contacts__span {
-  color: #3c5ccf;
-  font-size: 1.2rem;
-}
-
-.contacts__header {
-  margin: 1.5rem 0 3rem 0;
-  max-width: 500px;
-  line-height: 60px;
-  color: #000;
-  font-weight: 500;
-  font-size: 3.8rem;
-}
-
-.contacts__unork:hover::before {
-  max-width: 170px;
+  height: 100vh;
 }/*# sourceMappingURL=style.css.map */

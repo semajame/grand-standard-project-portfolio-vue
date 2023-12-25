@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@500&family=Playfair+Display&display=swap");
+
+$green: #235a52;
+$white: #fff;
+$semi-white: #eaedf2;
+$yellow: #96772c;
+$black: #000;
+$gray: #636363;
+
+.stay__hero {
+  background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e3f5b6eeb1a906fe628d863_bed-bedroom-blanket-clean-545012-p-1600.jpeg")
+    no-repeat center !important;
+  background-size: cover !important;
+  height: 100vh;
+}
+
+.explore__hotel {
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.725rem;
+  letter-spacing: 0.2rem;
+  background-color: transparent;
+  margin-top: 5rem;
+  border: none;
+  transition: 200ms ease;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+.stay__about__section {
+  padding: 7rem 0 0 0;
+  background-color: $white;
+  padding-bottom: 10rem;
+}
+
+// SUITES
+
+.stay__suites__container {
+  padding: 7rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.stay__suites__content {
+  display: flex;
+  align-items: start;
+  gap: 3rem;
+}
+
+.stay__suites__content:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.left__suites {
+  img {
+    width: 800px;
+    object-fit: cover;
+    height: 500px;
+  }
+}
+
+.right__suites {
+  width: 50%;
+}
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Playfair Display', serif;
+
+.right__top {
+  border-bottom: 1px solid $semi-white;
+  margin-bottom: 2rem;
+  h3 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    margin: 2rem 0;
+    font-size: 1.1rem;
+    font-family: "Lato", sans-serif;
+  }
+
+  .price__container {
+    margin: 0 0 2rem 0;
+    .price {
+      font-family: "Playfair Display", serif !important;
+      font-size: 2rem;
+    }
+
+    .night {
+      font-family: "Oswald", sans-serif;
+    }
+  }
+}
+
+.right__bottom {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+
+  .vertical__line {
+    height: 40px;
+    max-width: 2px;
+    background-color: $gray;
+  }
+
+  .description {
+    font-size: 0.925rem;
+    color: $gray;
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+.more__information {
+  position: relative;
+  top: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  background-color: $black;
+  padding: 1.5rem 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: $white !important;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: $green;
+  }
+}

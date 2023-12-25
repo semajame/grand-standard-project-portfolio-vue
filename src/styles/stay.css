@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@500&family=Playfair+Display&display=swap");
+.stay__hero {
+  background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e3f5b6eeb1a906fe628d863_bed-bedroom-blanket-clean-545012-p-1600.jpeg") no-repeat center !important;
+  background-size: cover !important;
+  height: 100vh;
+}
+
+.explore__hotel {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.725rem;
+  letter-spacing: 0.2rem;
+  background-color: transparent;
+  margin-top: 5rem;
+  border: none;
+  transition: 200ms ease;
+}
+.explore__hotel:hover {
+  color: #235a52;
+}
+
+.stay__about__section {
+  padding: 7rem 0 0 0;
+  background-color: #fff;
+  padding-bottom: 10rem;
+}
+
+.stay__suites__container {
+  padding: 7rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.stay__suites__content {
+  display: flex;
+  align-items: start;
+  gap: 3rem;
+}
+
+.stay__suites__content:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.left__suites img {
+  width: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 500px;
+}
+
+.right__suites {
+  width: 50%;
+}
+
+.right__top {
+  border-bottom: 1px solid #eaedf2;
+  margin-bottom: 2rem;
+}
+.right__top h3 {
+  font-size: 3.5rem;
+}
+.right__top p {
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+}
+.right__top .price__container {
+  margin: 0 0 2rem 0;
+}
+.right__top .price__container .price {
+  font-family: "Playfair Display", serif !important;
+  font-size: 2rem;
+}
+.right__top .price__container .night {
+  font-family: "Oswald", sans-serif;
+}
+
+.right__bottom {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.right__bottom .vertical__line {
+  height: 40px;
+  max-width: 2px;
+  background-color: #636363;
+}
+.right__bottom .description {
+  font-size: 0.925rem;
+  color: #636363;
+}
+.right__bottom .description img {
+  width: 35px;
+  height: 35px;
+}
+
+.more__information {
+  position: relative;
+  top: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  background-color: #000;
+  padding: 1.5rem 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: #fff !important;
+  transition: 0.3s ease;
+}
+.more__information:hover {
+  background-color: #235a52;
+}/*# sourceMappingURL=stay.css.map */

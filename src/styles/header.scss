@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@500&family=Playfair+Display&display=swap");
+
+$green: #235a52;
+$white: #fff;
+$semi-white: #eaedf2;
+$yellow: #96772c;
+$black: #000;
+$gray: #636363;
+
+// HEADER
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  padding: 1.5rem 2rem;
+  display: flex;
+  // border-bottom: 1px solid rgb(201, 200, 200);
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+nav {
+  ul {
+    display: flex;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .router__link {
+    font-size: 0.725rem;
+    color: $white;
+    letter-spacing: 0.1rem;
+    padding: 0 1rem;
+  }
+}
+
+.router__link {
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+h1 {
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+span,
+button {
+  font-family: "Lato", sans-serif !important;
+}
+
+button {
+  cursor: pointer;
+}
