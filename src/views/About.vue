@@ -49,8 +49,7 @@
             within the walls of Grand Standard.
             <br />
             <br />
-            In 2020, a significant renovation breathed new life into [Hotel
-            Name], preserving its historic charm while introducing modern
+            In 2020, a significant renovation breathed new life into Grand Hotel, preserving its historic charm while introducing modern
             amenities and cutting-edge design. This transformation reflects our
             commitment to providing a timeless experience that seamlessly blends
             the classic with the contemporary.
