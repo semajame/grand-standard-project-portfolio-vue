@@ -2,4 +2,23 @@
 .about__hero {
   background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e3f5501b61d39d39422a587_white-sofas-inside-building-2507010-p-1600.jpeg") no-repeat center;
   height: 100vh;
+}
+
+.about__section {
+  padding-top: 5rem;
+}
+
+.about__para {
+  font-family: "Lato", sans-serif;
+  padding: 8rem 2rem;
+}
+.about__para p {
+  text-align: left;
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 2rem auto 0 auto;
+  padding: 1rem 0;
+}
+.about__para h3 {
+  font-size: 2rem;
 }/*# sourceMappingURL=about.css.map */
