@@ -136,10 +136,14 @@ export default {
       const ul = document.querySelector("ul");
       ul.classList.remove("active");
 
+      const scrollPos = window.scrollY;
+
       const logo = document.querySelector(".logo__img");
 
-      if (true) {
-        logo.style.filter = "";
+      if (scrollPos > 20) {
+        logo.style.filter = "invert(1)";
+      } else {
+        logo.style.filter = "invert(0)";
       }
     },
   },
