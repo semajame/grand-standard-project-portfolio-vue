@@ -1,7 +1,7 @@
 <template>
-  <header class="header" :style="{ headerStyle: backgroundColor }">
+  <header class="header">
     <div class="left__header">
-      <router-link to="/">
+      <router-link to="/" class="logo">
         <img :src="logo" alt="Logo" class="logo__img" />
       </router-link>
     </div>
@@ -14,17 +14,30 @@
               {{ items.link }}
             </router-link>
           </li>
+
+          <button class="button close" @click="headerNavClose">
+            <img :src="close" alt="Menu Icon" />
+          </button>
         </ul>
+
+        <button class="button open" @click="headerNav">
+          <img :src="menu" alt="Menu Icon" />
+        </button>
       </nav>
     </div>
   </header>
 </template>
 
 <script>
+import menu from "../assets/menu.png";
+import close from "../assets/close.png";
 export default {
   data() {
     return {
       logo: "https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e3c0df17383a87005e25170_Logo%20(Light).svg",
+
+      menu: menu,
+      close: close,
 
       headerStyle: {
         backgroundColor: "rgba(255, 255, 255, 0)",
@@ -60,6 +73,7 @@ export default {
       const header = document.querySelector(".header");
       const links = document.querySelectorAll(".router__link");
       const logo = document.querySelector(".logo__img");
+      const menu = document.querySelector(".open");
 
       window.addEventListener("scroll", function () {
         const scrollPos = window.scrollY;
@@ -68,17 +82,41 @@ export default {
           // You can adjust this value based on when you want the background to change
           header.style.backgroundColor = "white";
           logo.style.filter = "invert(1)";
+          menu.style.filter = "invert(0)";
           links.forEach((links) => {
             links.style.color = "#235a52";
           });
         } else {
           header.style.backgroundColor = "rgba(255, 255, 255, 0)";
           logo.style.filter = "";
+          menu.style.filter = "";
           links.forEach((links) => {
             links.style.color = "";
           });
         }
       });
+    },
+
+    headerNav() {
+      const ul = document.querySelector("ul");
+      ul.classList.add("active");
+
+      const logo = document.querySelector(".logo__img");
+
+      if (true) {
+        logo.style.filter = "invert(1)";
+      }
+    },
+
+    headerNavClose() {
+      const ul = document.querySelector("ul");
+      ul.classList.remove("active");
+
+      const logo = document.querySelector(".logo__img");
+
+      if (true) {
+        logo.style.filter = "";
+      }
     },
   },
 };

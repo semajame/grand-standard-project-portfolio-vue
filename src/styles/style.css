@@ -39,7 +39,7 @@ body {
   letter-spacing: 0.2rem;
 }
 .hero__content h1 {
-  font-size: 4.5rem;
+  font-size: clamp(2rem, 8vw, 4.5rem);
   max-width: 720px;
   font-weight: 400;
   letter-spacing: -0.1vw;

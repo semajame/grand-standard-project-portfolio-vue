@@ -101,3 +101,21 @@ label {
 .contacts__unork:hover::before {
   max-width: 170px;
 }
+
+@media screen and (max-width: 1023px) {
+  .contacts__container {
+    flex-direction: column;
+  }
+
+  .contacts__left {
+    text-align: center;
+  }
+
+  .contacts__header {
+    max-width: 100%;
+  }
+
+  .contacts__right {
+    margin: 0 auto;
+  }
+}

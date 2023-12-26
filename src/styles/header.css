@@ -9,11 +9,20 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
+.left__header .logo {
+  z-index: 99;
+  position: relative;
+}
+
+nav {
+  display: flex;
+}
 nav ul {
   display: flex;
+  align-items: center;
 }
 nav li {
   list-style: none;
@@ -23,6 +32,10 @@ nav .router__link {
   color: #fff;
   letter-spacing: 0.1rem;
   padding: 0 1rem;
+}
+
+button {
+  display: none;
 }
 
 .router__link {
@@ -49,4 +62,48 @@ button {
 
 button {
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+  }
+  .close {
+    width: 30px;
+    height: 30px;
+  }
+  .open {
+    filter: invert(1);
+  }
+  .right__header nav ul {
+    position: absolute;
+    right: 0;
+    top: -20rem;
+    left: 0;
+    height: 300px;
+    z-index: 2;
+    background-color: white;
+    flex-direction: column;
+    padding-top: 6rem;
+    transition: 0.3ms ease-in-out;
+  }
+  .right__header nav ul li {
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  .right__header nav ul .close {
+    position: absolute;
+    top: 2rem;
+    right: 2.3rem;
+  }
+  .right__header nav ul .router__link {
+    color: #235a52;
+  }
+  .right__header nav ul.active {
+    top: 0;
+    transition: 0.3ms ease-in-out;
+  }
 }/*# sourceMappingURL=header.css.map */
