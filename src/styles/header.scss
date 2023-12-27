@@ -134,3 +134,9 @@ button {
     }
   }
 }
+
+@media screen and (max-width: 400px) {
+  header {
+    padding: 1rem;
+  }
+}

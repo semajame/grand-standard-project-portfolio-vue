@@ -95,32 +95,6 @@ export default {
       }
     },
 
-    // headerScroll() {
-    //   const header = document.querySelector(".header");
-    //   const links = document.querySelectorAll(".router__link");
-    //   const logo = document.querySelector(".logo__img");
-    //   const menu = document.querySelector(".open");
-
-    //   const scrollPos = window.scrollY;
-
-    //   if (scrollPos > 20) {
-    //     // You can adjust this value based on when you want the background to change
-    //     header.style.backgroundColor = "white";
-    //     logo.style.filter = "invert(1)";
-    //     menu.style.filter = "invert(0)";
-    //     links.forEach((links) => {
-    //       links.style.color = "#235a52";
-    //     });
-    //   } else {
-    //     header.style.backgroundColor = "rgba(255, 255, 255, 0)";
-    //     logo.style.filter = "";
-    //     menu.style.filter = "";
-    //     links.forEach((links) => {
-    //       links.style.color = "";
-    //     });
-    //   }
-    // },
-
     headerNav() {
       const ul = document.querySelector("ul");
       ul.classList.add("active");

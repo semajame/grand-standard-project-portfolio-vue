@@ -95,7 +95,7 @@ label {
   line-height: 60px;
   color: #000;
   font-weight: 500;
-  font-size: 3.8rem;
+  font-size: clamp(1.5rem, 8vw, 3.8rem);
 }
 
 .contacts__unork:hover::before {
@@ -105,6 +105,7 @@ label {
 @media screen and (max-width: 1023px) {
   .contacts__container {
     flex-direction: column;
+    padding: 7rem 2rem;
   }
 
   .contacts__left {
@@ -117,5 +118,15 @@ label {
 
   .contacts__right {
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .name__container {
+    flex-direction: column;
+  }
+
+  .contacts__right {
+    margin: 0;
   }
 }

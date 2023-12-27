@@ -114,4 +114,19 @@
 }
 .more__information:hover {
   background-color: #235a52;
+}
+
+@media screen and (max-width: 768px) {
+  .stay__suites__content {
+    flex-direction: column;
+  }
+  .right__suites {
+    width: 100%;
+  }
+  .right__suites .right__top {
+    margin: 0;
+  }
+  .stay__suites__content:nth-child(2) {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=stay.css.map */

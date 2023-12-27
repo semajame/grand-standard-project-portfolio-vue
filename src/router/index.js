@@ -5,6 +5,7 @@ import Stay from "../views/Stay.vue";
 import Dine from "../views/Dine.vue";
 import Contacts from "../views/Contacts.vue";
 
+import { headerNavClose } from "../headerNavClose";
 const routes = [
   {
     path: "/",
@@ -42,6 +43,8 @@ router.beforeEach((to, from, next) => {
   // Scroll to the top of the page
   window.scrollTo({ top: 0, behavior: "smooth" });
   next();
+
+  headerNavClose();
 });
 
 export default router;

@@ -139,3 +139,21 @@ $gray: #636363;
     background-color: $green;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .stay__suites__content {
+    flex-direction: column;
+  }
+
+  .right__suites {
+    width: 100%;
+
+    .right__top {
+      margin: 0;
+    }
+  }
+
+  .stay__suites__content:nth-child(2) {
+    flex-direction: column;
+  }
+}
