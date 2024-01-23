@@ -3,7 +3,7 @@
   background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e3f5b6eeb1a906fe628d863_bed-bedroom-blanket-clean-545012-p-1600.jpeg") no-repeat center !important;
   background-size: cover !important;
   height: 100vh;
-  background-attachment: fixed;
+  background-attachment: fixed !important;
 }
 
 .explore__hotel {
