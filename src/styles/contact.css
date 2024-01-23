@@ -5,6 +5,7 @@
   background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e397f7601fbdb500b2db72f_GettyImages-508069545-p-1600.jpeg")
     no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 form {

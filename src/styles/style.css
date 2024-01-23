@@ -9,6 +9,7 @@ body {
   background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e3f543f85059f6bf67849f5_palm-trees-at-night-258154-p-1600.jpeg") no-repeat center;
   background-size: cover;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 .home__overlay {
@@ -298,6 +299,7 @@ footer p {
   background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e3f566985059f02d1785d5d_chef-preparing-vegetable-dish-on-tree-slab-1267320-p-1600.jpeg") no-repeat center !important;
   background-size: cover !important;
   height: 100vh;
+  background-attachment: fixed !important;
 }
 
 @media screen and (max-width: 820px) {

@@ -20,6 +20,7 @@ body {
     no-repeat center;
   background-size: cover;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 .home__overlay {
@@ -347,6 +348,7 @@ footer {
     no-repeat center !important;
   background-size: cover !important;
   height: 100vh;
+  background-attachment: fixed !important;
 }
 
 @media screen and (max-width: 820px) {
