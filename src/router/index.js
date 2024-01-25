@@ -4,6 +4,7 @@ import About from "../views/About.vue";
 import Stay from "../views/Stay.vue";
 import Dine from "../views/Dine.vue";
 import Contacts from "../views/Contacts.vue";
+import NotFound from "../views/NotFound.vue";
 
 import { headerNavClose } from "../headerNavClose";
 const routes = [
@@ -31,6 +32,11 @@ const routes = [
     path: "/contacts",
     name: "contacts",
     component: Contacts,
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "NotFound",
+    component: NotFound,
   },
 ];
 
