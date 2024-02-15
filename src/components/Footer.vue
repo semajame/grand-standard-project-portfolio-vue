@@ -45,15 +45,15 @@ export default {
     return {
       navLinks: [
         {
-          name: "stay",
+          name: "/stay",
           link: "Stay",
         },
         {
-          name: "dine",
+          name: "/dine",
           link: "Dine",
         },
         {
-          name: "about",
+          name: "/about",
           link: "About",
         },
       ],
