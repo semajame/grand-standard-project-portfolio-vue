@@ -12,8 +12,7 @@
   <div class="room__container">
     <div class="left">
       <img
-        src="
-        https://uploads-ssl.webflow.com/5e13ddf1eb497c2211969f6c/5e3f5e90b61d397b3522d68e_ralph-kayden-FqqiAvJejto-unsplash.jpg"
+        src="https://uploads-ssl.webflow.com/5e13ddf1eb497c2211969f6c/5e3f5e90b61d397b3522d68e_ralph-kayden-FqqiAvJejto-unsplash.jpg"
         alt="Master Suite"
       />
     </div>
