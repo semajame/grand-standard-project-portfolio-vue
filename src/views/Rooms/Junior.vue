@@ -12,8 +12,7 @@
   <div class="room__container">
     <div class="left">
       <img
-        src="
-        https://uploads-ssl.webflow.com/5e13ddf1eb497c2211969f6c/5e3f63a353cb2b45d2a032a5_white-bed-linen-with-brown-bed-frame-3659681.jpg"
+        src="https://uploads-ssl.webflow.com/5e13ddf1eb497c2211969f6c/5e3f63a353cb2b45d2a032a5_white-bed-linen-with-brown-bed-frame-3659681.jpg"
         alt="Junior Suite"
       />
     </div>
