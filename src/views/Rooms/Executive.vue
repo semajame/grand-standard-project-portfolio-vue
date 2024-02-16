@@ -14,7 +14,7 @@
       <img
         src="
         https://uploads-ssl.webflow.com/5e13ddf1eb497c2211969f6c/5e3f63c6b61d392b0922ee45_apartment-bed-bedroom-chair-271618.jpg"
-        alt=""
+        alt="Executive Suite"
       />
     </div>
     <div class="right">

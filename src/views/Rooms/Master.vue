@@ -14,7 +14,7 @@
       <img
         src="
         https://uploads-ssl.webflow.com/5e13ddf1eb497c2211969f6c/5e3f5e90b61d397b3522d68e_ralph-kayden-FqqiAvJejto-unsplash.jpg"
-        alt=""
+        alt="Master Suite"
       />
     </div>
     <div class="right">
