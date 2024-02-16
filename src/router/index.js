@@ -5,9 +5,9 @@ import Stay from "../views/Stay.vue";
 import Dine from "../views/Dine.vue";
 import Contacts from "../views/Contacts.vue";
 import NotFound from "../views/NotFound.vue";
-import Junior from "../views/Rooms/Junior.vue";
-import Master from "../views/Rooms/Master.vue";
-import Executive from "../views/Rooms/Executive.vue";
+import Junior from "../views/rooms/Junior.vue";
+import Master from "../views/rooms/Master.vue";
+import Executive from "../views/rooms/Executive.vue";
 
 import { headerNavClose } from "../headerNavClose";
 const routes = [
