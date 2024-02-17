@@ -37,17 +37,17 @@ const routes = [
     component: Contacts,
   },
   {
-    path: "/rooms/junior-suite",
+    path: "/stay/junior-suite",
     name: "junior",
     component: Junior,
   },
   {
-    path: "/rooms/master-suite",
+    path: "/stay/master-suite",
     name: "master",
     component: Master,
   },
   {
-    path: "/rooms/executive-suite",
+    path: "/stay/executive-suite",
     name: "executive",
     component: Executive,
   },

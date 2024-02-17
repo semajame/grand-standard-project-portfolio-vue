@@ -1,13 +1,15 @@
 <template>
+  <div class="home__overlay"></div>
   <div class="container">
-    <h1>Executive Suite</h1>
-
-    <span class="suite__span"> STARTING AT $400/NIGHT </span>
-    <p>
-      With a panoramic view overlooking our grounds and direct access to the
-      south facing porch, the Master Suite provides warmth and brightness for a
-      peaceful getaway.
-    </p>
+    <div class="banner__container">
+      <h1>Executive Suite</h1>
+      <span class="suite__span"> STARTING AT $400/NIGHT </span>
+      <p>
+        With a panoramic view overlooking our grounds and direct access to the
+        south facing porch, the Master Suite provides warmth and brightness for
+        a peaceful getaway.
+      </p>
+    </div>
   </div>
   <div class="room__container">
     <div class="left">
@@ -70,6 +72,12 @@ const amenities = [
   text-align: center;
   padding: 10rem 0;
 }
+
+.banner__container {
+  position: relative;
+  z-index: 99;
+}
+
 h1 {
   font-size: 5rem;
   color: white;
@@ -146,5 +154,20 @@ button {
   font-weight: 600;
   border: none;
   margin-top: 2rem;
+}
+
+.home__overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 500px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#000),
+    color-stop(0%, rgba(0, 0, 0, 0.2)),
+    to(rgba(0, 0, 0, 0.75))
+  );
 }
 </style>
