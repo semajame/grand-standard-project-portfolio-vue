@@ -62,7 +62,7 @@
           </div>
         </div>
 
-        <router-link :to="{ name: items.link }" class="more__information">{{
+        <router-link :to="{ path: items.link }" class="more__information">{{
           items.moreInfo
         }}</router-link>
       </div>
@@ -93,7 +93,7 @@ export default {
           moreInfo: "More Information",
           roomGuests: "2 Guest",
           roomBed: "1 Queen Bed",
-          link: "junior",
+          link: "/stay/junior-suite",
         },
         {
           roomImg:
@@ -105,7 +105,7 @@ export default {
           moreInfo: "More Information",
           roomGuests: "4 Guest",
           roomBed: "2 Queen Bed",
-          link: "master",
+          link: "/stay/master-suite",
         },
         {
           roomImg:
@@ -117,7 +117,7 @@ export default {
           moreInfo: "More Information",
           roomGuests: "2 Guest",
           roomBed: "1 King Bed",
-          link: "executive",
+          link: "/stay/executive-suite",
         },
       ],
     };
