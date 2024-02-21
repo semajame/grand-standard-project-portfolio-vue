@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@500&family=Playfair+Display&display=swap");
+
 .contacts__hero {
   height: 100vh;
-  background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e397f7601fbdb500b2db72f_GettyImages-508069545-p-1600.jpeg") no-repeat center;
+  background: url("https://uploads-ssl.webflow.com/5e13a534946b1253f7c522a4/5e397f7601fbdb500b2db72f_GettyImages-508069545-p-1600.jpeg")
+    no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -34,13 +36,17 @@ label {
   gap: 1rem;
 }
 
-.first__name__container, .last__name__container,
-.email__container,
-.phone__container,
-.message__container {
+.first__name__container {
   margin: 0.2rem 0;
   display: flex;
   flex-direction: column;
+}
+
+.last__name__container,
+.email__container,
+.phone__container,
+.message__container {
+  @extend .first__name__container;
 }
 
 .message {
@@ -106,21 +112,26 @@ label {
     flex-direction: column;
     padding: 7rem 2rem;
   }
+
   .contacts__left {
     text-align: center;
   }
+
   .contacts__header {
     max-width: 100%;
   }
+
   .contacts__right {
     margin: 0 auto;
   }
 }
+
 @media screen and (max-width: 767px) {
   .name__container {
     flex-direction: column;
   }
+
   .contacts__right {
     margin: 0;
   }
-}/*# sourceMappingURL=contact.css.map */
+}
