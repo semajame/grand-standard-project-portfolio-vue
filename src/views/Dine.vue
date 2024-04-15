@@ -45,7 +45,7 @@
           <span> {{ items.roomBed }} </span>
         </div>
 
-        <router-link :to="{ name: 'dine' }" class="more__information">{{
+        <router-link :to="{ path: items.link }" class="more__information">{{
           items.moreInfo
         }}</router-link>
       </div>
@@ -73,6 +73,7 @@ export default {
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
           view: "View Details",
           moreInfo: "More Information",
+          link: "/dine/drinks",
         },
         {
           img: "https://uploads-ssl.webflow.com/5e13ddf1eb497c2211969f6c/5e3f654f84ad29260cf8e430_close-up-of-meal-served-in-plate-306059-p-800.jpeg",
@@ -82,6 +83,7 @@ export default {
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
           view: "View Details",
           moreInfo: "More Information",
+          link: "/dine/dinner",
         },
         {
           img: " https://uploads-ssl.webflow.com/5e13ddf1eb497c2211969f6c/5e3f651453cb2bb83ea03fd5_food-dinner-lunch-unhealthy-70497-thumb-p-500.jpeg",
@@ -90,6 +92,7 @@ export default {
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
           view: "View Details",
           moreInfo: "More Information",
+          link: "/dine/lunch",
         },
       ],
     };

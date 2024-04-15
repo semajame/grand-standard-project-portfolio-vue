@@ -65,7 +65,15 @@ export default {
   },
 
   mounted() {
-    window.addEventListener("scroll", this.headerScroll);
+    if (
+      window.location.href.includes("/dine/drinks") ||
+      window.location.href.includes("/dine/dinner") ||
+      window.location.href.includes("/dine/lunch")
+    ) {
+      window.addEventListener("load", this.headerMenus);
+    } else {
+      window.addEventListener("scroll", this.headerScroll);
+    }
   },
 
   methods: {
@@ -92,6 +100,29 @@ export default {
         links.forEach((links) => {
           links.style.color = "";
         });
+      }
+    },
+
+    headerMenus() {
+      const header = document.querySelector(".header");
+      const links = document.querySelectorAll(".router__link");
+      const logo = document.querySelector(".logo__img");
+      const menu = document.querySelector(".open");
+      const tabTitle = window.location.href;
+
+      if (
+        tabTitle.includes("/dine/drinks") ||
+        tabTitle.includes("/dine/lunch") ||
+        tabTitle.includes("/dine/dinner")
+      ) {
+        header.style.backgroundColor = "white";
+        logo.style.filter = "invert(1)";
+        menu.style.filter = "invert(0)";
+        links.forEach((link) => {
+          link.style.color = "#235a52";
+        });
+        console.log("test");
+        console.log(tabTitle);
       }
     },
 

@@ -5,9 +5,17 @@ import Stay from "../views/Stay.vue";
 import Dine from "../views/Dine.vue";
 import Contacts from "../views/Contacts.vue";
 import NotFound from "../views/NotFound.vue";
+
+// rooms
 import Junior from "../views/rooms/Junior.vue";
 import Master from "../views/rooms/Master.vue";
 import Executive from "../views/rooms/Executive.vue";
+
+// menu
+
+import Drinks from "../views/dine/Drink.vue";
+import Dinner from "../views/dine/Dinner.vue";
+import Lunch from "../views/dine/Lunch.vue";
 
 import { headerNavClose } from "../headerNavClose";
 const routes = [
@@ -50,6 +58,21 @@ const routes = [
     path: "/stay/executive-suite",
     name: "executive",
     component: Executive,
+  },
+  {
+    path: "/dine/drinks",
+    name: "drinks",
+    component: Drinks,
+  },
+  {
+    path: "/dine/dinner",
+    name: "dinner",
+    component: Dinner,
+  },
+  {
+    path: "/dine/lunch",
+    name: "lunch",
+    component: Lunch,
   },
   {
     path: "/:pathMatch(.*)*",

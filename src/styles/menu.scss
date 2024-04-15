@@ -1,0 +1,57 @@
+main {
+  padding: 10rem 0;
+}
+
+.hero__container {
+  text-align: center;
+  padding: 0 0 4rem 0;
+  h1 {
+    color: black;
+    font-size: 5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin: 1.2rem auto 0 auto;
+    max-width: 900px;
+  }
+}
+
+.dinner {
+  background: url("https://uploads-ssl.webflow.com/5e13ddf1eb497c2211969f6c/5e3f654cb61d3913f222f459_close-up-of-meal-served-in-plate-306059-p-1600.jpeg")
+    no-repeat center !important;
+}
+
+.lunch {
+  background: url("https://uploads-ssl.webflow.com/5e13ddf1eb497c2211969f6c/5e3f6511b61d39417e22f363_food-dinner-lunch-unhealthy-70497-p-1600.jpeg")
+    no-repeat center !important;
+}
+
+.dine__img__container {
+  background-size: cover !important;
+  width: 100vw;
+  height: 600px;
+  background: url("https://uploads-ssl.webflow.com/5e13ddf1eb497c2211969f6c/5e3f65a7b61d3908e522f5fe_group-of-people-doing-cheers-544961-p-1600.jpeg")
+    no-repeat center;
+}
+
+section {
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+}
+
+.menu__container {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  .menu__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid gray;
+  }
+}
