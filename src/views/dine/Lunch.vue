@@ -25,7 +25,7 @@
             </p>
           </div>
           <div>
-            <p>${{ item.price }}</p>
+            <p class="price">${{ item.price }}</p>
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@
             </p>
           </div>
           <div>
-            <p>${{ item.price }}</p>
+            <p class="price">${{ item.price }}</p>
           </div>
         </div>
       </div>
@@ -69,7 +69,7 @@
             </p>
           </div>
           <div>
-            <p>${{ item.price }}</p>
+            <p class="price">${{ item.price }}</p>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@
             </h3>
           </div>
           <div>
-            <p>${{ item.price }}</p>
+            <p class="price">${{ item.price }}</p>
           </div>
         </div>
       </div>

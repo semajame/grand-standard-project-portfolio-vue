@@ -35,6 +35,13 @@ section h2 {
   text-align: center;
   text-transform: uppercase;
   font-size: 3rem;
+  color: #235a52;
+}
+section p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  max-width: 500px;
+  color: #636363;
 }
 
 .menu__container {
@@ -42,10 +49,20 @@ section h2 {
   margin: 4rem auto;
   padding: 0 1rem;
 }
+.menu__container h3 {
+  color: #96772c;
+  font-size: 1.5rem;
+}
 .menu__container .menu__item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem 0;
   border-bottom: 1px solid gray;
+}
+.menu__container .price {
+  font-weight: 600;
+  font-family: "Playfair Display", sans-serif !important;
+  font-size: 1.4rem;
+  color: #000;
 }/*# sourceMappingURL=menu.css.map */
